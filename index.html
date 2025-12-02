@@ -1,0 +1,18 @@
+<html>
+<body>
+<form method="POST" action="/login">
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <button type="submit">Login</button>
+</form>
+
+<div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("error") === "1") {
+            document.write("try 'rielly' and 'password'");
+        }
+    </script>
+</div>
+</body>
+</html>
